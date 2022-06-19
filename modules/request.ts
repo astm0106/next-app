@@ -6,6 +6,7 @@ const requestInstance = axios.create({
 	baseURL: serverSideBaseURL,
 	headers: {
 		'Content-Type': 'application/json',
+		'Access-Control-Allow-Origin': '*',
 	  },
 });
  
@@ -13,6 +14,7 @@ const clientRequestInstance = axios.create({
 	baseURL: clientSideBaseURL,
 	headers: {
 		'Content-Type': 'application/json',
+		'Access-Control-Allow-Origin': '*',
 	  },
 });
  
