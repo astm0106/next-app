@@ -41,7 +41,7 @@ const Page: NextPage = ({ data }: any) => {
       </div>
       <ul>
         {result.map(
-          (d: any, index: number) => <li>No.{index + 1}: {d.message}<br/>{d.posting_time}</li>
+          (d: any, index: number) => <li key={index}>No.{index + 1}: {d.message}<br/>{d.posting_time}</li>
         )}
       </ul>
     </div>
