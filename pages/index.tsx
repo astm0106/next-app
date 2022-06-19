@@ -58,7 +58,7 @@ const Page: NextPage = ({ data }: any) => {
       message: message
     }
     const request = getRequestInstance(true);
-    //const req = await request.post("postdata", jsonData);
+    const req = await request.post("postdata", jsonData);
     setMessage("");
 
     const res = await request.get("data").then(res => res);
