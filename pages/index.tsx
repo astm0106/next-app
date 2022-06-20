@@ -48,6 +48,7 @@ const Page: NextPage = ({ data }: any) => {
   )
   //送信ボタンを押した時、空欄でなければメッセージが送信される
   function addMsg() {
+    console.log(process.env.NEXT_PUBLIC_TEST)
     if (message !== "") {
       addMsgExecute();
     }

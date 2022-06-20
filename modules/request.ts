@@ -1,6 +1,6 @@
 import axios from "axios";
-const serverSideBaseURL = "http://localhost:3000/api";
-const clientSideBaseURL = "http://localhost:3000/api";
+const serverSideBaseURL = process.env.NEXT_PUBLIC_TEST;
+const clientSideBaseURL = process.env.NEXT_PUBLIC_TEST;
  
 const requestInstance = axios.create({
 	baseURL: serverSideBaseURL,
