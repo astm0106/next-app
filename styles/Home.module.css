@@ -1,6 +1,93 @@
-.center {
-  text-align: center;
+.wrap{
+  background-image: url(../public/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
+
+.wrap header {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: 10;
+}
+.wrap h1{
+ font-size: 30px;
+ margin-top: 10px;
+ margin-bottom: 0;
+ width:100%;
+}
+
+.wrap main{
+  padding-top: 110px;
+  text-align: center;
+  background-color:rgba(255,255,255,0.7);
+  min-height: 100vh;
+ }
+
+ .wrap footer{
+  background-color:rgba(60, 60, 60, 0.7);
+ }
+
+ 
+.wrap a{
+  color: white;
+}
+
+.wrap a:hover {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.msgList {
+  padding-bottom: 5px;  
+}
+
+.msgList div{
+  border: 1.5px solid;
+  border-color: black;
+  width: 500px;
+  margin: 30px auto 10px auto; 
+  background-color: white;
+  border-radius: 10px;
+}
+
+.msgList .text {
+  width: 450px;
+  border: 0;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  margin: 10px auto 5px auto; 
+}
+
+.msgList .timestamp {
+  width: 450px;
+  border: 0;
+  font-size: 10px;
+  text-align: right;
+  color: gray;
+  margin: 5px auto 5px auto; 
+}
+
+.categories ul{
+  margin: 0;
+}
+.categories li{
+  width: 500px;
+  margin-top: 0;
+  list-style:none;
+  display: inline-block;
+}
+
+
 
 .container {
   padding: 0 2rem;
@@ -23,6 +110,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 
 .footer a {

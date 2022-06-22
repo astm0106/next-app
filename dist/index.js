@@ -11,11 +11,7 @@ var handle = app.getRequestHandler();
 var port = process.env.PORT || 3000;
 app.prepare().then(function () {
     var server = (0, express_1.default)();
-    server.use(function (req, res, next) {
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        next();
-    });
+
     server.all("*", function (req, res) {
         return handle(req, res);
     });
