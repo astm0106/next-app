@@ -10,7 +10,7 @@ export default async (req: any, res: any) => {
          msg_board\
     ORDER BY\
          posting_time DESC\
-    LIMIT 50";
+    LIMIT 100";
 
     const data = await sqlExecuter.any(querySelect);
     // console.log(data);

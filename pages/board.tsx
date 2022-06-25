@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Layout from '../components/layout'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/stylecomp/Board.module.css'
 import { getRequestInstance } from "../modules/request";
 import { useState } from 'react';
 
@@ -17,18 +17,20 @@ const Page: NextPage = ({ data }: any) => {
         title="掲示板"
         description="掲示板"
       >
-        <h2>掲示板</h2>
-        <div>
-          <form className='fetchForm'>
-            <textarea
-              placeholder='メッセージを入力してください'
-              rows={4}
-              cols={40}
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-            />
-          </form>
-          <button onClick={() => addMsg()}>メッセージ送信</button>
+        <h1>掲示板</h1>
+        <div className={styles.msgForm}>
+          <div>
+            <form>
+              <textarea
+                placeholder='メッセージを入力してください'
+                rows={3}
+                cols={20}
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+              />
+            </form>
+            <button onClick={() => addMsg()}>送信</button>
+          </div>
         </div>
         <div className={styles.msgList}>
           {result.map(

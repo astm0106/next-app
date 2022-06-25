@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  width: 440px;
+  margin: 20px auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  gap: 30px;
+}
+
+@media (max-width: 600px) {
+
+}

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/stylecomp/Layout.module.css'
 
 type Props = {
     children?: React.ReactNode
@@ -22,6 +22,7 @@ export default function Layout({ children, title, description }: Props) {
                     <div className={styles.categories}>
                         <ul>
                             <li><Link href="/"><a>ホーム</a></Link></li>
+                            <li><Link href="/blog"><a>ブログ</a></Link></li>
                             <li><Link href="/board"><a>掲示板</a></Link></li>
                         </ul>
                     </div>
